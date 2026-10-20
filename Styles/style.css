@@ -27,7 +27,10 @@
 }
 
 body {
+  margin: 0;
   font-family: "Open Sans", sans-serif;
+  background-color: #111111;
+  color: #ffffff;
 }
 
 h1,

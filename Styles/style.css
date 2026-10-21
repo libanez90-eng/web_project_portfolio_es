@@ -38,7 +38,7 @@ body {
 }
 
 main {
-  max-width: 1120px;
+  max-width: 1280px;
   width: 100%;
   margin: 0 auto;
   padding: 0 40px;
@@ -53,6 +53,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 40px;
+  padding-top: 40px;
 }
 
 .profile__image {
@@ -66,6 +67,7 @@ h2 {
   font-family: "Archivo Black", sans-serif;
   font-size: 72px;
   font-weight: 400;
+  line-height: 78px;
   margin: 0;
 }
 
@@ -75,6 +77,8 @@ h2 {
   font-weight: 400;
   color: #ffffff;
   opacity: 0.5;
+  margin-top: 15px;
+  margin-bottom: 0;
 }
 
 .profile__description {
@@ -82,6 +86,8 @@ h2 {
   font-size: 18px;
   font-weight: 400;
   color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
 .profile__link {
@@ -109,4 +115,112 @@ h2 {
   justify-content: space-between;
   list-style: none;
   padding: 0;
+}
+
+.skills__title {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 39px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.projects__cards {
+  display: flex;
+  gap: 24px;
+}
+
+.projects__card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.projects__links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: auto;
+}
+
+.projects__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.projects__link-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.projects__link_type_demo {
+  color: #6d6dff;
+}
+
+.projects__link_type_github {
+  color: #999999;
+}
+
+.projects__image {
+  display: block;
+  width: 100%;
+}
+
+.projects__link-icon_type_github {
+  filter: brightness(0) invert(60%);
+}
+
+.projects__image-container {
+  position: relative;
+}
+
+.projects__technologies {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+}
+
+.projects__description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 40px;
+  margin: 0 0 24px;
+}
+
+.contact__email {
+  font-size: 18px;
+  color: #6d6dff;
+  text-decoration: none;
+}
+
+.contact__social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 320px;
+  margin: 32px auto 0;
+}
+
+.contact__social-link img {
+  width: 24px;
+  height: 24px;
 }

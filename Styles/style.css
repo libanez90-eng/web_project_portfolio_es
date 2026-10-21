@@ -66,6 +66,7 @@ h2 {
   font-family: "Archivo Black", sans-serif;
   font-size: 72px;
   font-weight: 400;
+  margin: 0;
 }
 
 .profile__subtitle {

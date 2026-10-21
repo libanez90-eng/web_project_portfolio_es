@@ -82,3 +82,30 @@ h2 {
   font-weight: 400;
   color: #ffffff;
 }
+
+.profile__link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 4px solid #6d6dff;
+  padding-bottom: 5px;
+}
+
+.profile__links {
+  display: flex;
+  gap: 24px;
+}
+
+.profile__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.skills ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}

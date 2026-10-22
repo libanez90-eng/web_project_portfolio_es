@@ -42,6 +42,8 @@ main {
   width: 100%;
   margin: 0 auto;
   padding: 0 40px;
+  position: relative;
+  left: 7.5px;
 }
 
 h1,
@@ -52,7 +54,7 @@ h2 {
 .profile {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
   padding-top: 40px;
 }
 
@@ -67,8 +69,10 @@ h2 {
   font-family: "Archivo Black", sans-serif;
   font-size: 72px;
   font-weight: 400;
-  line-height: 78px;
+  line-height: 77px;
   margin: 0;
+  position: relative;
+  top: 1px;
 }
 
 .profile__subtitle {
@@ -79,6 +83,7 @@ h2 {
   opacity: 0.5;
   margin-top: 15px;
   margin-bottom: 0;
+  line-height: 25px;
 }
 
 .profile__description {
@@ -88,6 +93,7 @@ h2 {
   color: #ffffff;
   margin-top: 30px;
   margin-bottom: 0;
+  line-height: 25px;
 }
 
 .profile__link {
@@ -96,34 +102,65 @@ h2 {
   font-weight: 600;
   color: #ffffff;
   text-decoration: none;
-  border-bottom: 4px solid #6d6dff;
+  border-bottom: 5px solid #6d6dff;
   padding-bottom: 5px;
+  line-height: 25px;
 }
 
 .profile__links {
   display: flex;
-  gap: 24px;
+  gap: 30px;
+  margin-top: 30px;
+  line-height: 25px;
 }
 
 .profile__content {
   flex: 1;
   min-width: 0;
+  transform: translateY(19.5px);
 }
 
 .skills ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   list-style: none;
   padding: 0;
+  margin: 50px 0 0;
+}
+
+.skills li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 57px;
+}
+
+.skills li img {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.skills li:nth-child(-n + 2) img {
+  height: 57px;
 }
 
 .skills__title {
   font-family: "Archivo Black", sans-serif;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 400;
-  line-height: 39px;
-  margin-top: 80px;
+  line-height: 44px;
+  margin-top: 100px;
   margin-bottom: 40px;
+}
+
+.projects__title {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 44px;
+  margin-top: 100px;
 }
 
 .projects__cards {
@@ -199,11 +236,30 @@ h2 {
 
 .contact {
   text-align: center;
+  position: relative;
+  isolation: isolate;
+  margin-top: 80px;
+  font-size: 40px;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: #6d6dff;
+  border-radius: 50%;
+  filter: blur(400px);
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  pointer-events: none;
 }
 
 .contact h2 {
   font-size: 40px;
-  margin: 0 0 24px;
+  margin: 0 0 20px;
 }
 
 .contact__email {

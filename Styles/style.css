@@ -118,6 +118,10 @@ span {
   line-height: 25px;
 }
 
+.profile__subtitle span {
+  display: inline;
+}
+
 .profile__description {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
@@ -360,4 +364,96 @@ span {
 .contact__social-link img {
   width: 24px;
   height: 24px;
+}
+
+.profile__link,
+.projects__link,
+.contact__social-link {
+  transition: opacity 0.3s ease;
+}
+
+.profile__link:hover,
+.projects__link:hover,
+.contact__social-link:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    left: 0;
+  }
+
+  .profile h1 {
+    font-size: 58px;
+    line-height: 63.5px;
+    width: 434px;
+    top: 0;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .profile {
+    align-items: flex-start;
+    gap: 38px;
+    display: grid;
+    grid-template-columns: 434px 216px;
+    grid-template-rows: 127px 50px auto auto;
+    column-gap: 38px;
+    row-gap: 0;
+    align-items: start;
+  }
+
+  .profile__content {
+    transform: none;
+    display: contents;
+  }
+
+  .profile__image-container {
+    width: 216px;
+    height: 280px;
+    grid-column: 2;
+    grid-row: 1 / 3;
+  }
+
+  .profile__image {
+    width: 216px;
+    height: 280px;
+    object-fit: cover;
+  }
+
+  .profile__subtitle {
+    grid-column: 1;
+    grid-row: 2;
+    width: 452px;
+    margin-top: 14px;
+  }
+
+  .profile__subtitle span {
+    display: block;
+  }
+
+  .profile__description {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    width: 452px;
+    margin-top: 34px;
+  }
+
+  .profile__links {
+    grid-column: 1 / -1;
+    grid-row: 4;
+    margin-top: 20px;
+  }
+
+  .skills__title {
+    margin-top: 81px;
+  }
+
+  .skills ul {
+    width: 690px;
+    margin-top: 40px;
+  }
+  .projects__title {
+    margin-top: 80px;
+  }
 }

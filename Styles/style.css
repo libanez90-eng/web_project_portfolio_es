@@ -456,4 +456,67 @@ span {
   .projects__title {
     margin-top: 80px;
   }
+
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects__cards {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .projects__card {
+    width: 688px;
+  }
+
+  .projects__image-container {
+    height: 330px;
+  }
+
+  .projects__image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .projects__image-container img[src$="html.svg"],
+  .projects__image-container
+    img[src$="css.svg"]
+    .projects__image-container
+    img[src$="javascript.svg"]
+    .projects__image-container
+    img[src$="react.svg"] {
+    width: 40px;
+    height: 40px;
+  }
+
+  .projects__card:nth-child(2) {
+    min-height: 520px;
+    height: 520px;
+  }
+
+  .profile__image-container::before {
+    width: 700px;
+    height: 700px;
+    top: -220px;
+    left: -220px;
+    filter: blur(60px);
+    opacity: 0.2;
+  }
+
+  .contact {
+    margin-top: 73px;
+  }
+
+  .contact__email,
+  .contact__social {
+    position: relative;
+    left: 8px;
+  }
+
+  .contact h2 {
+    position: relative;
+    left: 8px;
+  }
 }

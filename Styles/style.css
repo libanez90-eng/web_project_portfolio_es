@@ -35,6 +35,7 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color: #111111;
   color: #ffffff;
+  overflow-x: clip;
 }
 
 main {

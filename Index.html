@@ -10,38 +10,53 @@
   <body>
     <main>
       <section class="profile">
-      <div class="profile__content">
-        <h1 class="profile__title">
-          <span>Mariana</span> 
-          <span>Hernández</span>
-        </h1>
-        
-        <p class="profile__subtitle">
-          <span>Desarrolladora Full-Stack Junior |</span> 
-          <span>TypeScript, React, Node.js</span> 
-        </p>
-        <p class="profile__description">
-          Desarrolladora web junior con experiencia práctica creando interfaces limpias y responsivas con HTML, CSS, JavaScript y React, así como implementando lógica básica de back-end. Ha trabajado en proyectos formativos que siguen procesos reales de desarrollo, usando Git, GitHub y Figma. Disfruta colaborar en equipo, mantener un código claro y resolver problemas de forma estructurada. Motivada por seguir aprendiendo, asumir nuevos retos y aprovechar oportunidades para crecer como desarrolladora.
-        </p>
-        <div class="profile__links">
-        <a href="./files/cv.pdf" download class="profile__link">Descargar CV</a>
-        <a href="https://github.com/libanez90-eng" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          class="profile__link"
-          >Enlace a GitHub</a
-        >
-        <a href="#contact" class="profile__link">
-          Hablemos
-        </a>
-      </div>
-      </div>
-      <div class="profile__image-container">
-      <img src="./images/profile.jpg" 
-           alt="Foto de perfil" 
-           class="profile__image"
-           />
-       </div>
+        <div class="profile__content">
+          <h1 class="profile__title">
+            <span>Mariana</span>
+            <span>Hernández</span>
+          </h1>
+
+          <p class="profile__subtitle">
+            <span>Desarrolladora Full-Stack Junior |</span>
+            <span>TypeScript, React, Node.js</span>
+          </p>
+          <p class="profile__description">
+            Desarrolladora web junior con experiencia práctica creando
+            interfaces limpias y responsivas con HTML, CSS, JavaScript y React,
+            así como implementando lógica básica de back-end. Ha trabajado en
+            proyectos formativos que siguen procesos reales de desarrollo,
+            usando Git, GitHub y Figma. Disfruta colaborar en equipo, mantener
+            un código claro y resolver problemas de forma estructurada. Motivada
+            por seguir aprendiendo, asumir nuevos retos y aprovechar
+            oportunidades para crecer como desarrolladora.
+          </p>
+          <div class="profile__links">
+            <a href="./files/cv.pdf" download class="profile__link"
+              >Descargar CV</a
+            >
+            <a
+              href="https://github.com/libanez90-eng"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="profile__link"
+              >Enlace a GitHub</a
+            >
+            <a href="#contact" class="profile__link"> Hablemos </a>
+          </div>
+        </div>
+        <div class="profile__image-container">
+          <picture>
+            <source
+              media="(max-width: 320px)"
+              srcset="./images/profile-mobile.png"
+            />
+            <img
+              src="./images/profile.jpg"
+              alt="Foto de perfil"
+              class="profile__image"
+            />
+          </picture>
+        </div>
       </section>
       <section class="skills">
         <h2 class="skills__title">Habilidades y herramientas</h2>
@@ -74,96 +89,112 @@
               <img
                 src="./images/coffe-shop.jpg"
                 alt="Página web de una cafetería"
-              class="projects__image"
-            />
+                class="projects__image"
+              />
 
-            <div class="projects__technologies projects__technologies_second">
-              <img src="./images/html.svg" alt="HTML" />
-              <img src="./images/css.svg" alt="CSS" />
+              <div class="projects__technologies projects__technologies_second">
+                <img src="./images/html.svg" alt="HTML" />
+                <img src="./images/css.svg" alt="CSS" />
+              </div>
             </div>
-          </div>
-          <h3>Página web de una cafetería</h3>
+            <h3>Página web de una cafetería</h3>
 
-          <p class="projects__description">
-            <span class="projects__description-text">Desarrollo de una landing page responsiva para una cafetería
-            siguiendo un brief de diseño. Incluye estructura semántica,
-            maquetación con Flexbox, creación de secciones nuevas y un
-            formulario de contacto funcional.
-            </span>
+            <p class="projects__description">
+              <span class="projects__description-text"
+                >Desarrollo de una landing page responsiva para una cafetería
+                siguiendo un brief de diseño. Incluye estructura semántica,
+                maquetación con Flexbox, creación de secciones nuevas y un
+                formulario de contacto funcional.
+              </span>
 
-            <span class="projects__description-text">
-            Logro: Implementé desde cero el diseño completo de la página,
-            organicé el proyecto con buenas prácticas y publiqué la versión
-            final utilizando GitHub Pages.
-            </span>
-          </p>
-          <div class="projects__links">
-            <a href="#" class="projects__link projects__link_type_demo">
-              <img
-                src="./images/union.svg"
-                alt="Union Logo"
-                class="projects__link-icon"
-              />
-              Demo en vivo
-            </a>
-            <a href="#" class="projects__link projects__link_type_github">
-              <img
-                src="./images/github.svg"
-                alt="GitHub"
-                class="projects__link-icon projects__link-icon_type_github"
-              />
-              GitHub
-            </a>
-          </div>
-        </article>
-        <article class="projects__card">
-          <div class="projects__image-container">
-            <img
-              src="./images/project-placeholder.jpg"
-              alt="Imagen de proyecto"
-              class="projects__image"
-            />
-            <div class="projects__technologies">
-              <img src="./images/javascript.svg" alt="JavaScript" />
-              <img src="./images/react.svg" alt="React" />
+              <span class="projects__description-text">
+                Logro: Implementé desde cero el diseño completo de la página,
+                organicé el proyecto con buenas prácticas y publiqué la versión
+                final utilizando GitHub Pages.
+              </span>
+            </p>
+            <div class="projects__links">
+              <a href="#" class="projects__link projects__link_type_demo">
+                <img
+                  src="./images/union.svg"
+                  alt="Union Logo"
+                  class="projects__link-icon"
+                />
+                Demo en vivo
+              </a>
+              <a href="#" class="projects__link projects__link_type_github">
+                <img
+                  src="./images/github.svg"
+                  alt="GitHub"
+                  class="projects__link-icon projects__link-icon_type_github"
+                />
+                GitHub
+              </a>
             </div>
-          </div>
-          <h3>Mi proyecto</h3>
-          <p class="projects__description">
-            Descripción del proyecto
-          </p>
-          <div class="projects__links">
-            <a href="#" class="projects__link projects__link_type_demo">
+          </article>
+          <article class="projects__card">
+            <div class="projects__image-container">
               <img
-                src="./images/union.svg"
-                alt="Union Logo"
-                class="projects__link-icon "
+                src="./images/project-placeholder.jpg"
+                alt="Imagen de proyecto"
+                class="projects__image"
               />
-              Demo en vivo
-            </a>
-            <a href="#" class="projects__link projects__link_type_github">
-              <img
-                src="./images/github.svg"
-                alt="GitHub"
-                class="projects__link-icon projects__link-icon_type_github"
-              />
-              GitHub
-            </a>
-        </article>
+              <div class="projects__technologies">
+                <img src="./images/javascript.svg" alt="JavaScript" />
+                <img src="./images/react.svg" alt="React" />
+              </div>
+            </div>
+            <h3>Mi proyecto</h3>
+            <p class="projects__description">Descripción del proyecto</p>
+            <div class="projects__links">
+              <a href="#" class="projects__link projects__link_type_demo">
+                <img
+                  src="./images/union.svg"
+                  alt="Union Logo"
+                  class="projects__link-icon"
+                />
+                Demo en vivo
+              </a>
+              <a href="#" class="projects__link projects__link_type_github">
+                <img
+                  src="./images/github.svg"
+                  alt="GitHub"
+                  class="projects__link-icon projects__link-icon_type_github"
+                />
+                GitHub
+              </a>
+            </div>
+          </article>
+        </div>
       </section>
       <section class="contact">
         <h2>Contacto</h2>
-        <a href="mailto:business@lakechapalarentals.com.mx" class="contact__email">
+        <a
+          href="mailto:business@lakechapalarentals.com.mx"
+          class="contact__email"
+        >
           student@tripleten.com
         </a>
         <div class="contact__social">
-          <a href="https://www.linkedin.com/in/luisarmandoibanez4a7b22188/" class="contact__social-link" aria-label="LinkedIn">
+          <a
+            href="https://www.linkedin.com/in/luisarmandoibanez4a7b22188/"
+            class="contact__social-link"
+            aria-label="LinkedIn"
+          >
             <img src="./images/linkedin.svg" alt="LinkedIn" />
           </a>
-          <a href="https://www.facebook.com/LakeChapalaRentals" class="contact__social-link" aria-label="Facebook">
+          <a
+            href="https://www.facebook.com/LakeChapalaRentals"
+            class="contact__social-link"
+            aria-label="Facebook"
+          >
             <img src="./images/facebook.svg" alt="Facebook" />
           </a>
-          <a href="https://www.instagram.com/lakechapalarentals/" class="contact__social-link" aria-label="Instagram">
+          <a
+            href="https://www.instagram.com/lakechapalarentals/"
+            class="contact__social-link"
+            aria-label="Instagram"
+          >
             <img src="./images/instagram.svg" alt="Instagram" />
           </a>
           <a href="#" class="contact__social-link" aria-label="X">
